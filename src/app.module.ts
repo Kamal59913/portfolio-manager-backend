@@ -5,8 +5,8 @@ import { AuthModule } from './modules/auth/auth.module';
 import { PrismaModule } from './modules/prisma/prisma.module';
 import { ConfigModule } from '@nestjs/config';
 import { APP_FILTER, APP_INTERCEPTOR } from '@nestjs/core';
-import { TransformResponseInterceptor } from './common/interceptors/transform-response.interceptor';
-import { HttpExceptionFilter } from './common/filters/http-exception.filter';
+import { TransformResponseInterceptor } from './core/interceptors/transform-response.interceptor';
+import { HttpExceptionFilter } from './core/filters/http-exception.filter';
 
 @Module({
   imports: [

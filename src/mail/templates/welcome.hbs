@@ -1,0 +1,24 @@
+<!-- src/mail/templates/welcome.hbs -->
+<table>
+  <tr>
+    <td><img src="cid:logo" alt="App Logo" style="width:100px;" /></td>
+  </tr>
+  <tr>
+    <td>
+      <h1>Welcome, {{name}}!</h1>
+      <p>We’re excited to have you join.</p>
+    </td>
+  </tr>
+  {{#if features.length}}
+  <tr>
+    <td>
+      <h3>Here’s what you get:</h3>
+      <ul>
+        {{#each features}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </td>
+  </tr>
+  {{/if}}
+</table>
